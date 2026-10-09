@@ -1,1 +1,11 @@
-package org.gc.system.exceptions;`npublic class DBException extends AppException {`n    public DBException(String msg) { super(msg); }`n}
+package org.gc.system.exceptions;
+
+public class DBException extends AppException {
+    public DBException(String message) {
+        super(message);
+    }
+
+    public DBException(String message, Throwable cause) {
+        super(message, cause);
+    }
+}
