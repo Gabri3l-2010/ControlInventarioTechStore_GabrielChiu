@@ -1,0 +1,1 @@
+-- Stored Procedures de Operaciones CRUD`nDELIMITER //`nCREATE PROCEDURE sp_insertar_producto() BEGIN END //`nDELIMITER ;
