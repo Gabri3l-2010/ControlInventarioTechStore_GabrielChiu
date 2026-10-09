@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="750.0"
+            xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.gc.system.controller.ProductoController">
+    <children>
+        <Label layoutX="20.0" layoutY="10.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Gestión de Productos" />
+
+        <!-- Formulario -->
+        <Label layoutX="20.0" layoutY="50.0" text="Nombre:" />
+        <TextField fx:id="txtNombre" layoutX="100.0" layoutY="45.0" prefWidth="200.0" />
+        <Label layoutX="320.0" layoutY="50.0" text="Precio:" />
+        <TextField fx:id="txtPrecio" layoutX="380.0" layoutY="45.0" prefWidth="120.0" />
+        <Label layoutX="520.0" layoutY="50.0" text="Stock:" />
+        <TextField fx:id="txtStock" layoutX="580.0" layoutY="45.0" prefWidth="80.0" />
+
+        <Label layoutX="20.0" layoutY="90.0" text="Umbral Mín:" />
+        <TextField fx:id="txtUmbral" layoutX="100.0" layoutY="85.0" prefWidth="100.0" />
+        <Label layoutX="220.0" layoutY="90.0" text="Categoría ID:" />
+        <TextField fx:id="txtCategoriaId" layoutX="320.0" layoutY="85.0" prefWidth="80.0" />
+        <Label layoutX="420.0" layoutY="90.0" text="Proveedor ID:" />
+        <TextField fx:id="txtProveedorId" layoutX="520.0" layoutY="85.0" prefWidth="80.0" />
+
+        <!-- Botones -->
+        <HBox layoutX="20.0" layoutY="125.0" spacing="10.0">
+            <Button onAction="#handleInsertar" text="Agregar" />
+            <Button onAction="#handleActualizar" text="Actualizar" />
+            <Button onAction="#handleEliminar" text="Eliminar" />
+            <Button onAction="#handleLimpiar" text="Limpiar" />
+        </HBox>
+
+        <!-- Tabla -->
+        <TableView fx:id="tblProductos" layoutX="20.0" layoutY="165.0" prefHeight="310.0" prefWidth="710.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="50.0" text="ID">
+                    <cellValueFactory><PropertyValueFactory property="id" /></cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="colNombre" prefWidth="160.0" text="Nombre">
+                    <cellValueFactory><PropertyValueFactory property="nombre" /></cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="colPrecio" prefWidth="90.0" text="Precio">
+                    <cellValueFactory><PropertyValueFactory property="precio" /></cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="colStock" prefWidth="70.0" text="Stock">
+                    <cellValueFactory><PropertyValueFactory property="stock" /></cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="colUmbral" prefWidth="90.0" text="Umbral Mín">
+                    <cellValueFactory><PropertyValueFactory property="umbralMinimo" /></cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="colCategoria" prefWidth="90.0" text="Cat. ID">
+                    <cellValueFactory><PropertyValueFactory property="categoriaId" /></cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="colProveedor" prefWidth="90.0" text="Prov. ID">
+                    <cellValueFactory><PropertyValueFactory property="proveedorId" /></cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
