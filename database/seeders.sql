@@ -1,0 +1,1 @@
+-- Población de Datos de Prueba (Seeders)`nINSERT INTO Producto VALUES (1);
