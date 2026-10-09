@@ -1,0 +1,1 @@
+package org.gc.system.util;`npublic class SessionContext {`n    private static SessionContext instance;`n    private SessionContext() {}`n    public static SessionContext getInstance() {`n        if (instance == null) instance = new SessionContext();`n        return instance;`n    }`n}
