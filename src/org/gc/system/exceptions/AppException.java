@@ -1,1 +1,11 @@
-package org.gc.system.exceptions;`npublic class AppException extends Exception {`n    public AppException(String msg) { super(msg); }`n}`n
+package org.gc.system.exceptions;
+
+public class AppException extends Exception {
+    public AppException(String message) {
+        super(message);
+    }
+
+    public AppException(String message, Throwable cause) {
+        super(message, cause);
+    }
+}
