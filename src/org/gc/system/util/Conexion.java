@@ -1,0 +1,1 @@
+package org.gc.system.util;`npublic class Conexion {`n    private static Conexion instance;`n    private Conexion() {}`n    public static Conexion getInstance() {`n        if (instance == null) instance = new Conexion();`n        return instance;`n    }`n}
