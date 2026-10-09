@@ -7,9 +7,9 @@ import java.sql.SQLException;
 public class Conexion {
     private static Conexion instance;
     private Connection connection;
-    private static final String URL = "jdbc:mysql://localhost:3306/techstore";
-    private static final String USER = "root";
-    private static final String PASS = "admin";
+    private static final String URL = "jdbc:mysql://localhost:3306/techstore_in4cm";
+    private static final String USER = "IN4CM";
+    private static final String PASS = "#NdimAM4";
 
     private Conexion() {
         try {
