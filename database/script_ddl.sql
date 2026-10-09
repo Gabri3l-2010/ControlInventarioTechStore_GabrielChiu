@@ -1,0 +1,1 @@
+-- Script DDL de Base de Datos y Restricciones`nCREATE TABLE Producto (id INT PRIMARY KEY);
